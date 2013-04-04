@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >    
+    <com.b16h22.evo.IconPreferenceScreen android:title="@string/cpu" android:key="cpu">
+        <intent android:targetPackage="it.sineo.android.noFrillsCPU" android:action="android.intent.action.MAIN" android:targetClass="it.sineo.android.noFrillsCPU.activity.MainActivity" />
+    </com.b16h22.evo.IconPreferenceScreen>
+    <com.b16h22.evo.IconPreferenceScreen android:title="@string/states" android:key="states">
+        <intent android:targetPackage="com.bvalosek.cpuspy" android:action="android.intent.action.MAIN" android:targetClass="com.bvalosek.cpuspy.ui.HomeActivity" />
+    </com.b16h22.evo.IconPreferenceScreen>
+    <com.b16h22.evo.IconPreferenceScreen android:title="@string/logcat" android:key="logcat">
+        <intent android:targetPackage="org.jtb.alogcat" android:action="android.intent.action.MAIN" android:targetClass="org.jtb.alogcat.LogActivity" />
+    </com.b16h22.evo.IconPreferenceScreen>
+    <com.b16h22.evo.IconPreferenceScreen android:title="@string/terminal" android:key="terminal">
+        <intent android:targetPackage="jackpal.androidterm" android:action="android.intent.action.MAIN" android:targetClass="jackpal.androidterm.Term" />
+    </com.b16h22.evo.IconPreferenceScreen>                
+</PreferenceScreen>

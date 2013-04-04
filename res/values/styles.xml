@@ -1,0 +1,24 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="Holo" parent="@style/Theme.Sherlock">
+        <item name="android:listViewStyle">@style/Widget.ListView.Holo</item>
+        <item name="android:textAppearanceLarge">@style/TextAppearance.Large</item> 
+        <item name="switchStyle">@style/Widget.Holo.CompoundButton.Switch</item>
+        <item name="switchPreferenceStyle">@style/Preference.SwitchPreference</item>                      
+    </style>
+    <style name="Widget.ListView.Holo" parent="@android:style/Widget.ListView">
+        <item name="android:paddingLeft">14.0dip</item>
+        <item name="android:paddingRight">14.0dip</item>
+        <item name="android:divider">@drawable/divider_horizontal_dark_opaque</item> 
+        <item name="android:listSelector">@drawable/list_selector_holo_dark</item>               
+    </style>
+    <style name="TextAppearance.Large" parent="@android:style/TextAppearance">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style> 
+    <style name="TextAppearance.Preference.Summary" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>         
+</resources>

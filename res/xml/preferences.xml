@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:switchpref="http://schemas.android.com/apk/res-auto" >    
+    <com.b16h22.evo.IconPreferenceScreen android:title="@string/title_activity_user_interface" android:key="ui">
+        <intent android:targetPackage="com.b16h22.evo" android:action="android.intent.action.MAIN" android:targetClass="com.b16h22.evo.UserInterface" />
+    </com.b16h22.evo.IconPreferenceScreen> 
+    <com.b16h22.evo.IconPreferenceScreen android:title="@string/title_activity_utility" android:key="utility">
+        <intent android:targetPackage="com.b16h22.evo" android:action="android.intent.action.MAIN" android:targetClass="com.b16h22.evo.Utility" />
+    </com.b16h22.evo.IconPreferenceScreen>
+    <com.b16h22.evo.IconPreferenceScreen android:title="@string/title_activity_about" android:key="about">
+        <intent android:targetPackage="com.b16h22.evo" android:action="android.intent.action.MAIN" android:targetClass="com.b16h22.evo.AboutActivity" />
+    </com.b16h22.evo.IconPreferenceScreen>              
+</PreferenceScreen>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="testArray">
+	<item>Toast 1</item>
+	<item>Toast 2</item>
+	<item>Toast 3</item>
+</string-array>
+<string-array name="testValues">
+    <item>firsttoast</item>
+    <item>secondtoast</item>
+    <item>thirdtoast</item>
+</string-array>    
+</resources>

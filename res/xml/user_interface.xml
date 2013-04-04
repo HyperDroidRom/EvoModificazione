@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <com.b16h22.evo.IconPreferenceScreen android:title="@string/lockscreen" android:key="lock">
+        <intent android:targetPackage="com.lidroid.parts" android:action="android.intent.action.MAIN" android:targetClass="com.lidroid.parts.MainActivity" />
+    </com.b16h22.evo.IconPreferenceScreen>
+    <com.b16h22.evo.IconPreferenceScreen android:title="@string/edt" android:key="edt">
+        <intent android:targetPackage="com.roman.edt.tweaks" android:action="android.intent.action.MAIN" android:targetClass="com.roman.edt.tweaks.Main" />
+    </com.b16h22.evo.IconPreferenceScreen> 
+    <com.b16h22.evo.IconPreferenceScreen android:title="@string/battery" android:key="battery">
+        <intent android:targetPackage="com.pvy.battbar.settings" android:action="android.intent.action.MAIN" android:targetClass="com.pvy.battbar.settings.options" />
+    </com.b16h22.evo.IconPreferenceScreen>
+    <com.b16h22.evo.IconPreferenceScreen android:title="@string/quickpanel" android:key="quickpanel">
+        <intent android:targetPackage="com.lidroid.quickpanel" android:action="android.intent.action.MAIN" android:targetClass="com.lidroid.quickpanel.MainActivity" />
+    </com.b16h22.evo.IconPreferenceScreen>              
+</PreferenceScreen>
