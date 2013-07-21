@@ -26,14 +26,17 @@ public class MainActivity extends SherlockPreferenceActivity {
         Resources res = getResources();
         Drawable icon = res.getDrawable(R.drawable.ic_settings_ui);
         test.setIcon(icon);
+        test.setLayoutResource(R.layout.custom_icon_preference);
         IconPreferenceScreen test1 = (IconPreferenceScreen) findPreference("utility");
         Resources res1 = getResources();
         Drawable icon1 = res1.getDrawable(R.drawable.ic_settings_utilities);
         test1.setIcon(icon1);
+        test1.setLayoutResource(R.layout.custom_icon_preference_01);
         IconPreferenceScreen test2 = (IconPreferenceScreen) findPreference("about");
         Resources res2 = getResources();
         Drawable icon2 = res2.getDrawable(R.drawable.ic_settings_about);
-        test2.setIcon(icon2);        
+        test2.setIcon(icon2); 
+        test2.setLayoutResource(R.layout.custom_icon_preference_02);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

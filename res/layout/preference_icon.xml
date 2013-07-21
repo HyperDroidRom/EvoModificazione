@@ -8,7 +8,6 @@
     <ImageView android:id="@+id/icon" 
     android:layout_width="wrap_content"
         android:layout_height="wrap_content" 
-        android:layout_marginLeft="2dip"
         android:layout_marginRight="6dip" 
         android:layout_gravity="center" />
     <RelativeLayout android:layout_width="wrap_content"
@@ -23,14 +22,17 @@
             android:layout_height="wrap_content"
             android:singleLine="true" 
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:ellipsize="marquee" 
+            android:ellipsize="marquee"
+            android:textStyle="bold" 
+            android:textColor="#ff323232"
             android:fadingEdge="horizontal" />
         <TextView android:id="@+android:id/summary"
             android:layout_width="wrap_content" 
             android:layout_height="wrap_content"
             android:layout_below="@android:id/title" 
             android:layout_alignLeft="@android:id/title"
+            android:textColor="#ff515151"            
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:maxLines="2" />
+            android:maxLines="4" />
     </RelativeLayout>
 </LinearLayout>

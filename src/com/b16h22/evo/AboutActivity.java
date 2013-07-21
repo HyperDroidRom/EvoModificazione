@@ -1,27 +1,53 @@
 package com.b16h22.evo;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockPreferenceActivity;
-import com.actionbarsherlock.view.MenuItem;
-
-import android.os.Bundle;
-import android.preference.PreferenceActivity;
-import android.app.Activity;
 import android.content.Intent;
-import android.view.Menu;
+import android.net.Uri;
+import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class AboutActivity extends SherlockPreferenceActivity {
-    
-	@SuppressWarnings("deprecation")
+import com.actionbarsherlock.app.SherlockActivity;
+import com.actionbarsherlock.view.MenuItem;
+
+public class AboutActivity extends SherlockActivity {
+	
+
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);	
+		super.onCreate(savedInstanceState);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);        
-        addPreferencesFromResource(R.xml.about);
+        getSupportActionBar().setHomeButtonEnabled(true); 
+		setContentView(R.layout.about);
+		
+		LinearLayout rom =(LinearLayout) findViewById(R.id.rom);
+		
+		rom.setOnClickListener(new View.OnClickListener() {
+			 
+			@Override
+			public void onClick(View v) {
+
+				 Uri uri = Uri.parse("http://forum.xda-developers.com/showthread.php?t=1757125");
+				 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+				 startActivity(intent);
+
+		        };
+		});
+		
+		LinearLayout theme =(LinearLayout) findViewById(R.id.theme);
+		
+		theme.setOnClickListener(new View.OnClickListener() {
+			 
+			@Override
+			public void onClick(View v) {
+
+				 Uri uri = Uri.parse("http://forum.xda-developers.com/showthread.php?t=2129475");
+				 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+				 startActivity(intent);
+
+		        };
+		});
 	}
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

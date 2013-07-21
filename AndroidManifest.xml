@@ -29,14 +29,50 @@
         <activity
             android:name="com.b16h22.evo.UserInterface"
             android:label="@string/title_activity_user_interface" >
+           <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>       
         </activity>
-        <activity           
+        <activity
+            android:theme="@style/Holo.ListView"
             android:name="com.b16h22.evo.Utility"
             android:label="@string/title_activity_utility" >
         </activity>
-        <activity           
+        <activity
+            android:theme="@style/About"
             android:name="com.b16h22.evo.AboutActivity"
             android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:theme="@style/Holo.ListView"
+            android:name="com.b16h22.evo.NotificationPanel"
+            android:label="@string/title_activity_notification_panel" >
+        </activity>
+        <activity
+            android:theme="@style/Holo.ListView"
+            android:name="com.b16h22.evo.StatusBar"
+            android:label="@string/title_activity_status_bar" >
+        </activity>
+        <activity
+            android:theme="@style/Holo.ListView"
+            android:name="com.b16h22.evo.StatusBarLayout"
+            android:label="@string/layout" >
+           <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>            
+        </activity>        
+        <activity
+            android:name="com.b16h22.evo.Profile"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/Holo.Profile" >
+           <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/Holo.ListView"
+            android:name="com.b16h22.evo.QuickSettings"
+            android:label="@string/title_activity_quick_settings" >
         </activity>
     </application>
 

@@ -24,25 +24,30 @@ public class UserInterface extends SherlockPreferenceActivity {
         getSupportActionBar().setHomeButtonEnabled(true);        
 		//For lock screen settings
         addPreferencesFromResource(R.xml.user_interface);        
-        IconPreferenceScreen test = (IconPreferenceScreen) findPreference("lock");
+        IconPreferenceScreen iconPref = (IconPreferenceScreen) findPreference("lock");
         Resources res = getResources();
         Drawable icon = res.getDrawable(R.drawable.ic_settings_lockscreen);
-        test.setIcon(icon);
-        //For edt tweaks
-        IconPreferenceScreen test1 = (IconPreferenceScreen) findPreference("edt");
-        Resources res1 = getResources();
-        Drawable icon1 = res1.getDrawable(R.drawable.ic_settings_edt);
-        test1.setIcon(icon1);
-        //For battery bar
-        IconPreferenceScreen test2 = (IconPreferenceScreen) findPreference("battery");
-        Resources res2 = getResources();
-        Drawable icon2 = res2.getDrawable(R.drawable.ic_settings_battery);
-        test2.setIcon(icon2);
-        //For battery bar
-        IconPreferenceScreen test3 = (IconPreferenceScreen) findPreference("quickpanel");
-        Resources res3 = getResources();
-        Drawable icon3 = res3.getDrawable(R.drawable.ic_settings_quickpanel);
-        test3.setIcon(icon3);        
+        iconPref.setIcon(icon);        
+        IconPreferenceScreen iconPref4 = (IconPreferenceScreen) findPreference("notifpanel");
+        Resources res4 = getResources();
+        Drawable icon4 = res4.getDrawable(R.drawable.ic_notify);
+        iconPref4.setIcon(icon4); 
+        IconPreferenceScreen iconPref5 = (IconPreferenceScreen) findPreference("profile");
+        Resources res5 = getResources();
+        Drawable icon5 = res5.getDrawable(R.drawable.ic_settings_profile);
+        iconPref5.setIcon(icon5);
+        IconPreferenceScreen iconPref6 = (IconPreferenceScreen) findPreference("statusbar");
+        Resources res6 = getResources();
+        Drawable icon6 = res6.getDrawable(R.drawable.ic_settings_statusbar_color);
+        iconPref6.setIcon(icon6);
+        IconPreferenceScreen iconPref7 = (IconPreferenceScreen) findPreference("quicksettings");
+        Resources res7 = getResources();
+        Drawable icon7 = res7.getDrawable(R.drawable.ic_settings_quicksettings);
+        iconPref7.setIcon(icon7);
+        IconPreferenceScreen iconPref8 = (IconPreferenceScreen) findPreference("statusbarlayout");
+        Resources res8 = getResources();
+        Drawable icon8 = res8.getDrawable(R.drawable.ic_settings_statusbar);
+        iconPref8.setIcon(icon8);
         }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

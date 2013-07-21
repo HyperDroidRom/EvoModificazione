@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
-    <com.b16h22.evo.IconPreferenceScreen android:title="@string/lockscreen" android:key="lock">
-        <intent android:targetPackage="com.lidroid.parts" android:action="android.intent.action.MAIN" android:targetClass="com.lidroid.parts.MainActivity" />
-    </com.b16h22.evo.IconPreferenceScreen>
-    <com.b16h22.evo.IconPreferenceScreen android:title="@string/edt" android:key="edt">
-        <intent android:targetPackage="com.roman.edt.tweaks" android:action="android.intent.action.MAIN" android:targetClass="com.roman.edt.tweaks.Main" />
+    <com.b16h22.evo.IconPreferenceScreen android:title="@string/title_activity_status_bar" android:summary="@string/status_summary" android:key="statusbar">
+        <intent android:targetPackage="com.b16h22.evo" android:action="android.intent.action.MAIN" android:targetClass="com.b16h22.evo.StatusBar" />
     </com.b16h22.evo.IconPreferenceScreen> 
-    <com.b16h22.evo.IconPreferenceScreen android:title="@string/battery" android:key="battery">
-        <intent android:targetPackage="com.pvy.battbar.settings" android:action="android.intent.action.MAIN" android:targetClass="com.pvy.battbar.settings.options" />
-    </com.b16h22.evo.IconPreferenceScreen>
-    <com.b16h22.evo.IconPreferenceScreen android:title="@string/quickpanel" android:key="quickpanel">
-        <intent android:targetPackage="com.lidroid.quickpanel" android:action="android.intent.action.MAIN" android:targetClass="com.lidroid.quickpanel.MainActivity" />
-    </com.b16h22.evo.IconPreferenceScreen>              
+    <com.b16h22.evo.IconPreferenceScreen android:title="@string/layout" android:summary="@string/layout_summary" android:key="statusbarlayout">
+        <intent android:targetPackage="com.b16h22.evo" android:action="android.intent.action.MAIN" android:targetClass="com.b16h22.evo.StatusBarLayout" />
+    </com.b16h22.evo.IconPreferenceScreen>         
+    <com.b16h22.evo.IconPreferenceScreen android:title="@string/title_activity_notification_panel" android:summary="@string/notif_summary" android:key="notifpanel">
+        <intent android:targetPackage="com.b16h22.evo" android:action="android.intent.action.MAIN" android:targetClass="com.b16h22.evo.NotificationPanel" />
+    </com.b16h22.evo.IconPreferenceScreen> 
+    <com.b16h22.evo.IconPreferenceScreen android:title="@string/title_activity_quick_settings" android:key="quicksettings" android:summary="@string/quicksettings_summary">
+        <intent android:targetPackage="com.b16h22.evo" android:action="android.intent.action.MAIN" android:targetClass="com.b16h22.evo.QuickSettings" />
+    </com.b16h22.evo.IconPreferenceScreen>    
+    <com.b16h22.evo.IconPreferenceScreen android:title="@string/title_activity_profile" android:key="profile" android:summary="@string/user_summary" >
+        <intent android:targetPackage="com.b16h22.evo" android:action="android.intent.action.MAIN" android:targetClass="com.b16h22.evo.Profile" />
+    </com.b16h22.evo.IconPreferenceScreen>          
+    <com.b16h22.evo.IconPreferenceScreen android:title="@string/lockscreen" android:key="lock" android:summary="@string/ls_summary">
+        <intent android:targetPackage="com.lidroid.parts" android:action="android.intent.action.MAIN" android:targetClass="com.lidroid.parts.MainActivity" />
+    </com.b16h22.evo.IconPreferenceScreen>            
 </PreferenceScreen>
